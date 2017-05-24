@@ -1,1 +1,135 @@
-<h1> Hello World! </h1>
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <section class="slide-wrapper">
+        <div class="container">
+            <div id="myCarousel" class="carousel slide">
+                <!-- 轮播按钮 -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                 </ol>
+
+                <!-- 轮播内容 -->
+                <div class="carousel-inner">
+                    <div class="item item1 active">
+                        <div class="fill" style=" background-color:#48c3af;">
+                            <div class="inner-content">
+                                <div class="carousel-img">
+                                    <img src="http://oq3mpwc6v.bkt.clouddn.com/wine-881536_1280.jpg" alt="sofa" class="img img-responsive" />
+                                </div>
+                                <div class="carousel-desc">
+
+                                    <h2>Welcome To Noble Winery</h2>
+                                    <p>Mellow wine, elegant life. Mellow mellow, drops of passion. Supreme red wine, in harmony with the heart and soul. From France noble winery, famous teacher brewing, distinguished symbol. Taste pure french.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item2">
+                        <div class="fill" style="background-color:#58FAF4;">
+                            <div class="inner-content">
+                                <div class="carousel-img">
+                                    <img src="http://oq3mpwc6v.bkt.clouddn.com/two-types-of-wine-1761613_1280.jpg" alt="white-sofa" class="img img-responsive" />
+                                </div>
+                                <div class="carousel-desc">
+
+                                    <h2>Noble Choice French Brew</h2>
+                                    <p>Heritage French romance, cross century taste. Drops of alcohol, infinite aftertaste. French wine alcohol, a cup of fragrant forever. Served with French sauce and brewed with Oriental elegance. </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item3">
+                        <div class="fill" style="background-color:#7fc2f4;">
+                            <div class="inner-content">
+                                <div class="col-md-6">
+
+                                    <div class="carousel-img">
+                                        <img src="http://oq3mpwc6v.bkt.clouddn.com/girl-1064664_1280.jpg" alt="sofa" class="img img-responsive" />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 text-left">
+                                    <div class="carousel-desc">
+
+                                        <h2>Elegant Taste Brops Of Alcohol</h2>
+                                        <p>From planting to brewing, adhere to the traditional flavor. Romantic France, to a good life. Deep love, love my heart. Taste mellow red brew, always have a romantic. Taste romance and feel mellow.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item3">
+                        <div class="fill" style="background-color:#7fc2f4;">
+                            <div class="inner-content">
+                                <div class="col-md-6">
+
+                                    <div class="carousel-img">
+                                        <img src="http://oq3mpwc6v.bkt.clouddn.com/%E8%83%8C%E6%99%AF%E5%9B%BE2.jpg" alt="sofa" class="img img-responsive" />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 text-left">
+                                    <div class="carousel-desc">
+
+                                        <h2>Charming Aroma Taste Into The Heart</h2>
+                                        <p>Feel romantic and elegant, taste noble and luxurious. Gift breeds quality, essence, brew classics. Wine, extraordinary, heart, romance, heart moment, love note life.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<div class="partner">
+				<ul id="flexiselDemo3">
+				   <li><img src="http://oq3mpwc6v.bkt.clouddn.com/uploads/product/image/1/medium_%E5%86%B0%E9%85%922.jpg" class="img-responsive" alt=""/></li>
+				   <li><img src="http://oq3mpwc6v.bkt.clouddn.com/%E4%BA%BA%E9%A9%AC%E5%A4%B4xo.jpg" class="img-responsive" alt=""/></li>
+				   <li><img src="http://oq3mpwc6v.bkt.clouddn.com/uploads/product/image/2/medium_%E7%BA%A2%E8%91%A1%E8%90%84%E9%85%921.jpg" class="img-responsive" alt=""/></li>
+				   <li><img src="http://oq3mpwc6v.bkt.clouddn.com/%E6%8B%89%E8%8F%B21.jpg" class="img-responsive" alt=""/></li>
+				   <li><img src="http://oq3mpwc6v.bkt.clouddn.com/xo2.jpg" class="img-responsive" alt=""/></li>
+           <li><img src="http://oq3mpwc6v.bkt.clouddn.com/%E5%B9%B2%E7%99%BD1.jpg" class="img-responsive" alt=""/></li>
+           <li><img src="http://oq3mpwc6v.bkt.clouddn.com/%E9%A9%AC%E7%88%B9%E5%88%A92.jpg" class="img-responsive" alt=""/></li>
+				</ul>
+				<script type="text/javascript">
+					$(window).load(function() {
+						$("#flexiselDemo3").flexisel({
+							visibleItems: 5,
+							animationSpeed: 1000,
+							autoPlay: true,
+							autoPlaySpeed: 3000,
+							pauseOnHover: true,
+							enableResponsiveBreakpoints: true,
+					    	responsiveBreakpoints: {
+					    		portrait: {
+					    			changePoint:480,
+					    			visibleItems: 1
+					    		},
+					    		landscape: {
+					    			changePoint:640,
+					    			visibleItems: 2
+					    		},
+					    		tablet: {
+					    			changePoint:768,
+					    			visibleItems: 3
+					    		}
+					    	}
+					    });
+
+					});
+			 </script>
+	         <script type="text/javascript" src="app/assets.application.js"></script>
+		</div>
+
+</html>
