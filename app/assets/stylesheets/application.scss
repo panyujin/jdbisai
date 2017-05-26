@@ -121,7 +121,7 @@ html { height: 100%;}
   body { min-height: 100%; display: flex; flex-direction: column;}
   .content { flex: 1;}
 
-  /*--- Partner Part Starts here ---*/
+  /*--- Partner 小轮播 ---*/
   .partner{
   	background:#bbbbbb;
   }
@@ -181,3 +181,167 @@ html { height: 100%;}
   	right: 0px;
   	background: url(http://oq3mpwc6v.bkt.clouddn.com/slide-arw.png) no-repeat -48px 0px;
   }
+  /*--- Partner 小轮播 ---*/
+  /*--gallery--*/
+  .gallery {
+      padding: 5em 0;
+  }
+  .quick {
+      padding: 1em;
+  }
+  span.glyphicon.glyphicon-eye-open {
+      top: 3px;
+  	color: #fff;
+  	margin-right: 5px;
+  }
+  .gallery-grid a {
+      color: #000;
+  }
+  .gallery-grid {
+  	position: relative;
+      margin-bottom: 2em;
+  }
+  .gallery-grid.glry-one .gallery-info {
+      left: 2%;
+      width: 96%;
+  	bottom: 14.6%;
+  }
+  .gallery-grid.glry-two .gallery-info {
+      left: 4%;
+      width: 92%;
+  	bottom: 14.5%;
+  }
+  .gallery-info {
+      position: absolute;
+      width: 90%;
+      bottom: 21%;
+      left: 5%;
+      display: none;
+      background-color: rgba(6, 6, 6, 0.79);
+      padding: 1em;
+  }
+  .gallery-grid img:hover {
+       border: 1px solid rgba(255, 25, 2, 1);
+  }
+  .gallery-info p {
+      color: #fff;
+      text-transform: capitalize;
+      font-size: 1em;
+      margin-top: 0.5em;
+      float: left;
+  }
+  .gallery-info a.shop {
+      font-size: 0.8em;
+      color: #fff;
+      padding: 0.3em 1.5em;
+      border: 2px solid #fff;
+      float: right;
+  }
+  .gallery-info a.shop:hover{
+  	border-color:#F07818;
+  	color:#F07818;
+  }
+  .gallery-info.galrr-info-two p {
+      font-size: 1em;
+      margin-top: 0.3em;
+  }
+  .gallery-info.galrr-info-two a.shop {
+      font-size: .8em;
+      padding: .3em 1.5em;
+  }
+  .save p {
+      color: #fff;
+  }
+  .gallery-grid:hover div.gallery-info {
+    display: block;
+  }
+  .gallery-grid img {
+      border: 1px solid #eee;
+  }
+  .gallery-grids {
+      margin-top: 3em;
+  }
+  .galy-info p {
+      font-size: 1em;
+      color: #000;
+      margin: 1em 0 0;
+  	font-weight: 600;
+  }
+  .galy-info h5 {
+      font-size: 1.5em;
+      color: #FF0000;
+  }
+  /* ratings */
+  /**/
+  .rating {
+  	direction: rtl;
+  	text-align: center;
+  	float: left;
+  }
+  .rating > span {
+  	display: inline-block;
+  	position: relative;
+  }
+  .rating > span:hover,
+  .rating > span:hover ~ span {
+  	color: transparent;
+  }
+  .rating > span:hover:before,
+  .rating > span:hover ~ span:before {
+  	content: "\2605";
+  	position: absolute;
+  	left: 0;
+  	color: #F07818;
+  }
+  .rating1 {
+  	direction: rtl;
+  	text-align: left;
+  }
+  .rating1 > span {
+  	display: inline-block;
+  	position: relative;
+  }
+  .rating1 > span:hover,
+  .rating1 > span:hover ~ span {
+  	color: transparent;
+  }
+  .rating1 > span:hover:before,
+  .rating1 > span:hover ~ span:before {
+  	content: "\2605";
+  	position: absolute;
+  	left: 0;
+  	color: gold;
+  }
+  ul.size {
+    padding: 0;
+    list-style: none;
+    margin-top: 1em;
+  }
+  ul.size li {
+    display: inline-block;
+    margin: 0 10px 0 0;
+  }
+  ul.size h3 {
+      color: #F07818;
+      font-size: 1.4em;
+      text-transform: uppercase;
+      margin: 0 0 0.5em;
+      font-weight: 600;
+  }
+  ul.size li a {
+      color: #999;
+      font-size: 1em;
+      background: #fff;
+      padding: 5px 0;
+  }
+  ul.rating li a:hover, .price_single a:hover, ul.size li a:hover {
+    color: #ee4a02;
+    text-decoration: none;
+  }
+  .prices {
+      float: right;
+  }
+  .galry {
+      margin-top: 1em;
+  }
+  /*--//gallery--*/
