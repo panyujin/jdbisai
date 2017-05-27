@@ -1,0 +1,347 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+ @import "font-awesome";
+
+/*------------------------------- 轮播功能区 ------------------------------*/
+ html, body{
+   width:100%;
+   height:100%;
+   background-color:#fff;
+ font-family: 'Sansita', sans-serif;
+   }
+ .carousel-inner,.carousel,.item,.container,.fill {
+ height:100%;
+ width:100%;
+ background-position:center center;
+ background-size:cover;
+ }
+ .slide-wrapper{display:inline;}
+ .slide-wrapper .container{padding:0px;}
+
+ /*------------------------------ 垂直引导滑块----------------------------*/
+
+ .carousel-inner> .item.next ,  .carousel-inner > .item.active.right{ transform: translateY(100%); -webkit-transform: translateY(100%); -ms-transform: translateY(100%);
+ -moz-transform: translateY(100%); -o-transform: translateY(100%);  top: 0;left:0;}
+ .carousel-inner > .item.prev ,.carousel-inner > .item.active.left{ transform: translateY(-100%); -webkit-transform: translateY(-100%);  -moz-transform: translateY(-100%);
+ -ms-transform: translateY(-100%); -o-transform: translateY(-100%); top: 0; left:0;}
+ .carousel-inner > .item.next.left , .carousel-inner > .item.prev.right , .carousel-inner > .item.active{transform:translateY(0); -webkit-transform:translateY(0);
+ -ms-transform:translateY(0);-moz-transform:translateY(0); -o-transform:translateY(0); top:0; left:0;}
+
+ /*------------------------------- 垂直旋转指标 ------------------------------*/
+ .carousel-indicators{
+ position:absolute;
+ top:0;
+ bottom:0;
+ margin:auto;
+ height:20px;
+ right:10px; left:auto;
+ width:auto;
+ }
+ .carousel-indicators li{display:block; margin-bottom:5px; border:1px solid #0000FF; }
+ .carousel-indicators li.active{margin-bottom:5px; background:#0000FF;}
+ /*-------- 动画滑块 ------*/
+
+ .animated{
+ animation-duration:3s;
+ -webkit-animation-duration:3s;
+ -moz-animation-duration:3s;
+ -ms-animation-duration:3s;
+ -o-animation-duration:3s;
+ visibility:visible;
+ opacity:1;
+ transition:all 0.3s ease;
+ }
+ .carousel-img{
+  display: inline-block;
+   margin: 0 auto;
+   width: 100%;
+   text-align: center;
+ }
+ .item img{margin:auto;visibility:hidden; opacity:0; transition:all 0.3s ease; -webkit-transition:all 0.3s ease; -moz-transition:all 0.3s ease; -ms-transition:all 0.3s ease; -o-transition:all 0.3s ease;}
+ .item1 .carousel-img img , .item1.active .carousel-img img{max-height:300px;}
+ .item1.active .carousel-img img.animated{visibility:visible; opacity:1; transition:all 1s ease; -webkit-transition:all 1s ease; -moz-transition:all 1s ease; -ms-transition:all 1s ease; -o-transition:all 1s ease;
+ animation-duration:2s; -webkit-animation-duration:2s; -moz-animation-duration:2s; -ms-animation-duration:2s; -o-animation-duration:2s; animation-delay:0.3s ; -webkit-animation-delay:0.3s;
+ -moz-animation-delay:0.3s;-ms-animation-delay:0.3s; }
+ .item .carousel-desc{color:#fff; text-align:center;}
+ .item  h2{font-size:50px; animation-delay:1.5s;animation-duration:1s; }
+ .item  p{animation-delay:2.5s;animation-duration:1s; width:50%; margin:auto;}
+
+ .item2 .carousel-img img , .item2.active .carousel-img img{max-height:300px;}
+ .item2.active .carousel-img img.animated{visibility:visible; opacity:1; transition:all 0.3s ease; animation-duration:3s; animation-delay:0.3s}
+ .item2 h2 , item2.active h2{visibility:hidden; opacity:0; transition:all 5s ease;}
+ .item2.active h2.animated{visibility:visible; opacity:1;  animation-delay:3s;}
+
+ .item .fill{padding:0px 30px; display:table; }
+ .item .inner-content{display: table-cell;vertical-align: middle;}
+ .item3 .col-md-6{float:none; display:inline-block; vertical-align:middle; width:49%;}
+
+ .item3.active .carousel-img img.animated{visibility:visible; opacity:1; transition:all 0.3s ease; animation-duration:2s; animation-delay:0.3s}
+ .item3 h2 , item3.active h2{visibility:hidden; opacity:0; transition:all 5s ease; }
+ .item.item3 .carousel-desc{text-align:left;}
+ .item3.active h2.animated{visibility:visible; opacity:1;  animation-delay:1.5s}
+ .item3 p , item3.active p{visibility:hidden; opacity:0; transition:all 5s ease; width:100%;  }
+ .item3.active p.animated{visibility:visible; opacity:1;  animation-delay:2.5s;}
+
+ @media(max-width:991px)
+ {
+ .item .carousel-desc , .item.item3 .carousel-desc{text-align:center;}
+ .item .carousel-desc p {width:80%;}
+ .item3 .col-md-6{width:100%; text-align:center;}
+ }
+ @media(max-width:768px)
+ {
+ .item .carousel-img img, .item.active .carousel-img img{max-height:155px;}
+ .item  h2{font-size:30px; margin-top:0px;}
+ .item .carousel-desc p{width:100%; font-size:12px;}
+ }
+ @media(max-width:480px)
+ {
+ .item  h2{font-size:30px;}
+ .item .carousel-desc p{width:100%;}
+ }
+/*------------------------------- 轮播功能区 ------------------------------*/
+/*--- 导航栏满屏 ---*/
+html { height: 100%;}
+  body { min-height: 100%; display: flex; flex-direction: column;}
+  .content { flex: 1;}
+
+  /*--- Partner 小轮播 ---*/
+  .partner{
+  	background:#bbbbbb;
+  }
+  #flexiselDemo3 {
+  	display: none;
+  }
+  .nbs-flexisel-container {
+  	position: relative;
+  	max-width: 100%;
+  	margin-bottom:3em;
+  }
+  .nbs-flexisel-ul {
+  	position: relative;
+  	width: 9999px;
+  	margin: 0px;
+  	padding: 0px;
+  	list-style-type: none;
+  	text-align: center;
+  }
+  .nbs-flexisel-inner {
+  	overflow: hidden;
+  	width:90%;
+  	margin: 0 auto;
+  	padding:2em 0;
+  }
+  .nbs-flexisel-item {
+  	float: left;
+  	margin: 0px;
+  	padding: 0px;
+  	cursor: pointer;
+  	position: relative;
+  	line-height: 0px;
+  }
+  .nbs-flexisel-item > img {
+  	cursor: pointer;
+  	positon: relative;
+  	max-width:400px;
+  	max-height:240px;
+  }
+  /*** Navigation ***/
+  .nbs-flexisel-nav-left, .nbs-flexisel-nav-right {
+  	width: 80px;
+  	height: 128px;
+  	position: absolute;
+  	cursor: pointer;
+  	z-index: 100;
+  	margin:2em 0;
+  }
+  .flexy .nbs-flexisel-nav-left, .flexy .nbs-flexisel-nav-right{
+  	margin:0 !important;
+  }
+  .nbs-flexisel-nav-left {
+  	left: 0px;
+  	background: url(http://oq3mpwc6v.bkt.clouddn.com/slide-arw.png) no-repeat 0px 0px;
+  }
+  .nbs-flexisel-nav-right {
+  	right: 0px;
+  	background: url(http://oq3mpwc6v.bkt.clouddn.com/slide-arw.png) no-repeat -48px 0px;
+  }
+  /*--- Partner 小轮播 ---*/
+  /*--gallery--*/
+  .gallery {
+      padding: 5em 0;
+  }
+  .quick {
+      padding: 1em;
+  }
+  span.glyphicon.glyphicon-eye-open {
+      top: 3px;
+  	color: #fff;
+  	margin-right: 5px;
+  }
+  .gallery-grid a {
+      color: #000;
+  }
+  .gallery-grid {
+  	position: relative;
+      margin-bottom: 2em;
+  }
+  .gallery-grid.glry-one .gallery-info {
+      left: 2%;
+      width: 96%;
+  	bottom: 14.6%;
+  }
+  .gallery-grid.glry-two .gallery-info {
+      left: 4%;
+      width: 92%;
+  	bottom: 14.5%;
+  }
+  .gallery-info {
+      position: absolute;
+      width: 90%;
+      bottom: 21%;
+      left: 5%;
+      display: none;
+      background-color: rgba(6, 6, 6, 0.79);
+      padding: 1em;
+  }
+  .gallery-grid img:hover {
+       border: 1px solid rgba(255, 25, 2, 1);
+  }
+  .gallery-info p {
+      color: #fff;
+      text-transform: capitalize;
+      font-size: 1em;
+      margin-top: 0.5em;
+      float: left;
+  }
+  .gallery-info a.shop {
+      font-size: 0.8em;
+      color: #fff;
+      padding: 0.3em 1.5em;
+      border: 2px solid #fff;
+      float: right;
+  }
+  .gallery-info a.shop:hover{
+  	border-color:#F07818;
+  	color:#F07818;
+  }
+  .gallery-info.galrr-info-two p {
+      font-size: 1em;
+      margin-top: 0.3em;
+  }
+  .gallery-info.galrr-info-two a.shop {
+      font-size: .8em;
+      padding: .3em 1.5em;
+  }
+  .save p {
+      color: #fff;
+  }
+  .gallery-grid:hover div.gallery-info {
+    display: block;
+  }
+  .gallery-grid img {
+      border: 1px solid #eee;
+  }
+  .gallery-grids {
+      margin-top: 3em;
+  }
+  .galy-info p {
+      font-size: 1em;
+      color: #000;
+      margin: 1em 0 0;
+  	font-weight: 600;
+  }
+  .galy-info h5 {
+      font-size: 1.5em;
+      color: #FF0000;
+  }
+  /* ratings */
+  /**/
+  .rating {
+  	direction: rtl;
+  	text-align: center;
+  	float: left;
+  }
+  .rating > span {
+  	display: inline-block;
+  	position: relative;
+  }
+  .rating > span:hover,
+  .rating > span:hover ~ span {
+  	color: transparent;
+  }
+  .rating > span:hover:before,
+  .rating > span:hover ~ span:before {
+  	content: "\2605";
+  	position: absolute;
+  	left: 0;
+  	color: #F07818;
+  }
+  .rating1 {
+  	direction: rtl;
+  	text-align: left;
+  }
+  .rating1 > span {
+  	display: inline-block;
+  	position: relative;
+  }
+  .rating1 > span:hover,
+  .rating1 > span:hover ~ span {
+  	color: transparent;
+  }
+  .rating1 > span:hover:before,
+  .rating1 > span:hover ~ span:before {
+  	content: "\2605";
+  	position: absolute;
+  	left: 0;
+  	color: gold;
+  }
+  ul.size {
+    padding: 0;
+    list-style: none;
+    margin-top: 1em;
+  }
+  ul.size li {
+    display: inline-block;
+    margin: 0 10px 0 0;
+  }
+  ul.size h3 {
+      color: #F07818;
+      font-size: 1.4em;
+      text-transform: uppercase;
+      margin: 0 0 0.5em;
+      font-weight: 600;
+  }
+  ul.size li a {
+      color: #999;
+      font-size: 1em;
+      background: #fff;
+      padding: 5px 0;
+  }
+  ul.rating li a:hover, .price_single a:hover, ul.size li a:hover {
+    color: #ee4a02;
+    text-decoration: none;
+  }
+  .prices {
+      float: right;
+  }
+  .galry {
+      margin-top: 1em;
+  }
+  /*--//gallery--*/
