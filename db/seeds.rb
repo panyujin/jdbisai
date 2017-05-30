@@ -69,109 +69,109 @@
  #   image: open("http://oq3mpwc6v.bkt.clouddn.com/%E4%BA%94%E7%B2%AE%E6%B6%B21.jpg")
  #  )
 
-  Product.create!(
-   title: "五粮液",
-   description: "陈年老酒 五粮液酒 原瓶老酒 约22年酒龄 1995年52度浓香型500ML",
-   price: 2350,
-   quantity: 30,
-   image: open("http://oq3mpwc6v.bkt.clouddn.com/%E4%BA%94%E7%B2%AE%E6%B6%B22.jpg")
-  )
-
-  Product.create!(
-   title: "干邑白兰地法国原装进口洋酒",
-   description: "宝树行 轩尼诗XO700mL 整箱六支装 干邑白兰地法国原装进口洋酒0.7L",
-   price: 7620,
-   quantity: 30,
-   image: open("http://oq3mpwc6v.bkt.clouddn.com/%E5%AE%9D%E6%A0%91%E8%A1%8C1.jpg")
-  )
-
-  Product.create!(
-   title: "干邑白兰地法国原装进口洋酒",
-   description: "轩尼诗（Hennessy）XO 干邑白兰地 40度法国进口洋酒 700ml整箱6瓶装",
-   price: 8288,
-   quantity: 30,
-   image: open("http://oq3mpwc6v.bkt.clouddn.com/xo3.jpg")
-  )
-
-  Product.create!(
-   title: "干邑白兰地法国原装进口洋酒",
-   description: "宝树行 人头马路易十三700mL Remy Martin LouisXIII干邑白兰地洋酒",
-   price: 17800,
-   quantity: 30,
-   image: open("http://oq3mpwc6v.bkt.clouddn.com/%E5%AE%9D%E6%A0%91%E8%A1%8C2.jpg")
-  )
-
-  Product.create!(
-   title: "法国原瓶进口红酒",
-   description: "法国原瓶进口红酒 波尔多AOC级圣马丁王子干红葡萄酒玛嘉唯诺750ml 13%vol重瓶型六支装+酒具套装",
-   price: 208,
-   quantity: 30,
-   image: open("http://oq3mpwc6v.bkt.clouddn.com/%E7%BA%A2%E8%91%A1%E8%90%843.jpg")
-  )
-
-  Product.create!(
-   title: "牛栏山 经典",
-   description: "牛栏山 经典 52度 500ml*6瓶 整箱装",
-   price: 2199,
-   quantity: 30,
-   image: open("http://oq3mpwc6v.bkt.clouddn.com/%E4%BA%8C%E9%94%85%E5%A4%B41.jpg")
-  )
-
-   Product.create!(
-     title: "人头马X.O",
-     description: "人头马X.O戛纳限量版干邑白兰地进口洋酒3000ml",
-     price: 12000,
-     quantity: 11,
-     image: open("http://oq3mpwc6v.bkt.clouddn.com/%E4%BA%BA%E9%A9%AC%E5%A4%B4xo.jpg")
-    )
-
-    Product.create!(
-      title: "人头马X.O",
-      description: "洋酒法国原装进口人头马干邑白兰地（Remy Martin XO）洋酒 VSOP 人头马XO700ml新包装",
-      price: 898,
-      quantity: 25,
-      image: open("http://oq3mpwc6v.bkt.clouddn.com/XO4.jpg")
-     )
-
-   Product.create!(
-     title: "人头马X.O",
-     description: "洋酒 人头马白兰地 人头马 天醇XO干邑白兰地700ml",
-     price: 999,
-     quantity: 25,
-     image: open("http://oq3mpwc6v.bkt.clouddn.com/XO5.jpg")
-    )
-
-    Product.create!(
-      title: "人头马X.O",
-      description: "宝树行 人头马xo700mL 天醇特优香槟干邑白兰地原装进口洋酒0.7L",
-      price: 1410,
-      quantity: 25,
-      image: open("http://oq3mpwc6v.bkt.clouddn.com/XO7.jpg")
-     )
-
-   Product.create!(
-     title: "人头马X.O",
-     description: "洋酒法国原装进口人头马干邑白兰地（Remy Martin XO）洋酒 VSOP 人头马XO3000ml",
-     price: 5500,
-     quantity: 25,
-     image: open("http://oq3mpwc6v.bkt.clouddn.com/XO9.jpg")
-    )
-
-  Product.create!(
-    title: "人头马X.O",
-    description: "人头马天醇XO特优干邑白兰地700ml",
-    price: 1189,
-    quantity: 25,
-    image: open("http://oq3mpwc6v.bkt.clouddn.com/XO10.jpg")
-   )
-
- Product.create!(
-   title: "人头马X.O",
-   description: "法国进口洋酒 人头马XO 特优香槟 干邑白兰地 700ml",
-   price: 1369,
-   quantity: 25,
-   image: open("http://oq3mpwc6v.bkt.clouddn.com/XO11.jpg")
-   )
+ #  Product.create!(
+ #   title: "五粮液",
+ #   description: "陈年老酒 五粮液酒 原瓶老酒 约22年酒龄 1995年52度浓香型500ML",
+ #   price: 2350,
+ #   quantity: 30,
+ #   image: open("http://oq3mpwc6v.bkt.clouddn.com/%E4%BA%94%E7%B2%AE%E6%B6%B22.jpg")
+ #  )
+ #
+ #  Product.create!(
+ #   title: "干邑白兰地法国原装进口洋酒",
+ #   description: "宝树行 轩尼诗XO700mL 整箱六支装 干邑白兰地法国原装进口洋酒0.7L",
+ #   price: 7620,
+ #   quantity: 30,
+ #   image: open("http://oq3mpwc6v.bkt.clouddn.com/%E5%AE%9D%E6%A0%91%E8%A1%8C1.jpg")
+ #  )
+ #
+ #  Product.create!(
+ #   title: "干邑白兰地法国原装进口洋酒",
+ #   description: "轩尼诗（Hennessy）XO 干邑白兰地 40度法国进口洋酒 700ml整箱6瓶装",
+ #   price: 8288,
+ #   quantity: 30,
+ #   image: open("http://oq3mpwc6v.bkt.clouddn.com/xo3.jpg")
+ #  )
+ #
+ #  Product.create!(
+ #   title: "干邑白兰地法国原装进口洋酒",
+ #   description: "宝树行 人头马路易十三700mL Remy Martin LouisXIII干邑白兰地洋酒",
+ #   price: 17800,
+ #   quantity: 30,
+ #   image: open("http://oq3mpwc6v.bkt.clouddn.com/%E5%AE%9D%E6%A0%91%E8%A1%8C2.jpg")
+ #  )
+ #
+ #  Product.create!(
+ #   title: "法国原瓶进口红酒",
+ #   description: "法国原瓶进口红酒 波尔多AOC级圣马丁王子干红葡萄酒玛嘉唯诺750ml 13%vol重瓶型六支装+酒具套装",
+ #   price: 208,
+ #   quantity: 30,
+ #   image: open("http://oq3mpwc6v.bkt.clouddn.com/%E7%BA%A2%E8%91%A1%E8%90%843.jpg")
+ #  )
+ #
+ #  Product.create!(
+ #   title: "牛栏山 经典",
+ #   description: "牛栏山 经典 52度 500ml*6瓶 整箱装",
+ #   price: 2199,
+ #   quantity: 30,
+ #   image: open("http://oq3mpwc6v.bkt.clouddn.com/%E4%BA%8C%E9%94%85%E5%A4%B41.jpg")
+ #  )
+ #
+ #   Product.create!(
+ #     title: "人头马X.O",
+ #     description: "人头马X.O戛纳限量版干邑白兰地进口洋酒3000ml",
+ #     price: 12000,
+ #     quantity: 11,
+ #     image: open("http://oq3mpwc6v.bkt.clouddn.com/%E4%BA%BA%E9%A9%AC%E5%A4%B4xo.jpg")
+ #    )
+ #
+ #    Product.create!(
+ #      title: "人头马X.O",
+ #      description: "洋酒法国原装进口人头马干邑白兰地（Remy Martin XO）洋酒 VSOP 人头马XO700ml新包装",
+ #      price: 898,
+ #      quantity: 25,
+ #      image: open("http://oq3mpwc6v.bkt.clouddn.com/XO4.jpg")
+ #     )
+ #
+ #   Product.create!(
+ #     title: "人头马X.O",
+ #     description: "洋酒 人头马白兰地 人头马 天醇XO干邑白兰地700ml",
+ #     price: 999,
+ #     quantity: 25,
+ #     image: open("http://oq3mpwc6v.bkt.clouddn.com/XO5.jpg")
+ #    )
+ #
+ #    Product.create!(
+ #      title: "人头马X.O",
+ #      description: "宝树行 人头马xo700mL 天醇特优香槟干邑白兰地原装进口洋酒0.7L",
+ #      price: 1410,
+ #      quantity: 25,
+ #      image: open("http://oq3mpwc6v.bkt.clouddn.com/XO7.jpg")
+ #     )
+ #
+ #   Product.create!(
+ #     title: "人头马X.O",
+ #     description: "洋酒法国原装进口人头马干邑白兰地（Remy Martin XO）洋酒 VSOP 人头马XO3000ml",
+ #     price: 5500,
+ #     quantity: 25,
+ #     image: open("http://oq3mpwc6v.bkt.clouddn.com/XO9.jpg")
+ #    )
+ #
+ #  Product.create!(
+ #    title: "人头马X.O",
+ #    description: "人头马天醇XO特优干邑白兰地700ml",
+ #    price: 1189,
+ #    quantity: 25,
+ #    image: open("http://oq3mpwc6v.bkt.clouddn.com/XO10.jpg")
+ #   )
+ #
+ # Product.create!(
+ #   title: "人头马X.O",
+ #   description: "法国进口洋酒 人头马XO 特优香槟 干邑白兰地 700ml",
+ #   price: 1369,
+ #   quantity: 25,
+ #   image: open("http://oq3mpwc6v.bkt.clouddn.com/XO11.jpg")
+ #   )
 
   Product.create!(
     title: "华致酒行 中国十七大名酒豪华套装",
