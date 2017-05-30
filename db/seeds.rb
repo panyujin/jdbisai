@@ -173,66 +173,66 @@
  #   image: open("http://oq3mpwc6v.bkt.clouddn.com/XO11.jpg")
  #   )
 
-  Product.create!(
-    title: "华致酒行 中国十七大名酒豪华套装",
-    description: "华致酒行 中国十七大名酒豪华套装",
-    price: 35800,
-    quantity: 25,
-    image: open("http://oq3mpwc6v.bkt.clouddn.com/baijiu1.jpg")
-   )
-
-   Product.create!(
-     title: "国窖1573",
-     description: "【2015封藏大典收藏系】国窖1573 春酿 三羊开泰 浓香型白酒 55度50L装",
-     price: 135000,
-     quantity: 25,
-     image: open("http://oq3mpwc6v.bkt.clouddn.com/%E5%9B%BD%E7%AA%961.jpg")
-    )
-
-    Product.create!(
-      title: "53度 茅台 中国龙 一套 8瓶",
-      description: "【53度 茅台 中国龙 一套 8瓶",
-      price: 168888,
-      quantity: 25,
-      image: open("http://oq3mpwc6v.bkt.clouddn.com/%E8%B4%B5%E5%B7%9E%E8%8C%85%E5%8F%B03.jpg")
-     )
-
-   Product.create!(
-     title: "贵州茅台",
-     description: "52度 茅台 80年陈酿 八十年岁月 八十年陈香",
-     price: 198000,
-     quantity: 25,
-     image: open("http://oq3mpwc6v.bkt.clouddn.com/%E8%B4%B5%E5%B7%9E%E8%8C%85%E5%8F%B05.jpg")
-    )
-
-  Product.create!(
-    title: "贵州茅台",
-    description: "53度 茅台 百年金奖封坛酒 30L 带酒具",
-    price: 228888,
-    quantity: 25,
-    image: open("http://oq3mpwc6v.bkt.clouddn.com/%E8%B4%B5%E5%B7%9E%E8%8C%85%E5%8F%B06.jpg")
-   )
-
-   Product.create!(
-     title: "五粮液陈酿",
-     description: "华致酒行 50°五粮液陈酿年份酒50年陶瓶500ml浓香型白酒",
-     price: 25888,
-     quantity: 25,
-     image: open("http://oq3mpwc6v.bkt.clouddn.com/%E4%BA%94%E7%B2%AE%E6%B6%B23.jpg")
-    )
-
-    Product.create!(
-      title: "五粮液陈酿",
-      description: "华致酒行 50°五粮液陈酿年份酒30年陶瓶500ml浓香型白酒",
-      price: 13888,
-      quantity: 25,
-      image: open("http://oq3mpwc6v.bkt.clouddn.com/WLY1.jpg")
-     )
-
-     Product.create!(
-       title: "国窖1573",
-       description: "国窖1573 生命中的那坛酒009（金榜题名） 55度1L*1盒 收藏系白酒",
-       price: 9000,
-       quantity: 25,
-       image: open("http://oq3mpwc6v.bkt.clouddn.com/%E5%9B%BD%E7%AA%963.jpg")
-      )
+  # Product.create!(
+  #   title: "华致酒行 中国十七大名酒豪华套装",
+  #   description: "华致酒行 中国十七大名酒豪华套装",
+  #   price: 35800,
+  #   quantity: 25,
+  #   image: open("http://oq3mpwc6v.bkt.clouddn.com/baijiu1.jpg")
+  #  )
+  #
+  #  Product.create!(
+  #    title: "国窖1573",
+  #    description: "【2015封藏大典收藏系】国窖1573 春酿 三羊开泰 浓香型白酒 55度50L装",
+  #    price: 135000,
+  #    quantity: 25,
+  #    image: open("http://oq3mpwc6v.bkt.clouddn.com/%E5%9B%BD%E7%AA%961.jpg")
+  #   )
+  #
+  #   Product.create!(
+  #     title: "53度 茅台 中国龙 一套 8瓶",
+  #     description: "【53度 茅台 中国龙 一套 8瓶",
+  #     price: 168888,
+  #     quantity: 25,
+  #     image: open("http://oq3mpwc6v.bkt.clouddn.com/%E8%B4%B5%E5%B7%9E%E8%8C%85%E5%8F%B03.jpg")
+  #    )
+  #
+  #  Product.create!(
+  #    title: "贵州茅台",
+  #    description: "52度 茅台 80年陈酿 八十年岁月 八十年陈香",
+  #    price: 198000,
+  #    quantity: 25,
+  #    image: open("http://oq3mpwc6v.bkt.clouddn.com/%E8%B4%B5%E5%B7%9E%E8%8C%85%E5%8F%B05.jpg")
+  #   )
+  #
+  # Product.create!(
+  #   title: "贵州茅台",
+  #   description: "53度 茅台 百年金奖封坛酒 30L 带酒具",
+  #   price: 228888,
+  #   quantity: 25,
+  #   image: open("http://oq3mpwc6v.bkt.clouddn.com/%E8%B4%B5%E5%B7%9E%E8%8C%85%E5%8F%B06.jpg")
+  #  )
+  #
+  #  Product.create!(
+  #    title: "五粮液陈酿",
+  #    description: "华致酒行 50°五粮液陈酿年份酒50年陶瓶500ml浓香型白酒",
+  #    price: 25888,
+  #    quantity: 25,
+  #    image: open("http://oq3mpwc6v.bkt.clouddn.com/%E4%BA%94%E7%B2%AE%E6%B6%B23.jpg")
+  #   )
+  #
+  #   Product.create!(
+  #     title: "五粮液陈酿",
+  #     description: "华致酒行 50°五粮液陈酿年份酒30年陶瓶500ml浓香型白酒",
+  #     price: 13888,
+  #     quantity: 25,
+  #     image: open("http://oq3mpwc6v.bkt.clouddn.com/WLY1.jpg")
+  #    )
+  #
+  #    Product.create!(
+  #      title: "国窖1573",
+  #      description: "国窖1573 生命中的那坛酒009（金榜题名） 55度1L*1盒 收藏系白酒",
+  #      price: 9000,
+  #      quantity: 25,
+  #      image: open("http://oq3mpwc6v.bkt.clouddn.com/%E5%9B%BD%E7%AA%963.jpg")
+  #     )
