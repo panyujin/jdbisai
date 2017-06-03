@@ -24,6 +24,11 @@ Rails.application.routes.draw do
     collection do
       get :search
     end
+    collection do
+      get :wine
+      get :spirit
+      get :brandy
+    end
   end
 
   resources :carts do

@@ -9,6 +9,18 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
   end
 
+  def wine
+    @products = Product.where(:category => "wine").paginate(:page => params[:page], :per_page => 5)
+  end
+
+  def spirit
+    @products = Product.where(:category => "spirit").paginate(:page => params[:page], :per_page => 5)
+  end
+
+  def brandy
+    @products = Product.where(:category => "brandy").paginate(:page => params[:page], :per_page => 5)
+  end
+
   def search
     if @query_string.present?
       search_result = Product.ransack(@search_criteria).result(:distinct => true)
