@@ -9,6 +9,18 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
   end
 
+  def add_to_cart
+    @product = Product.find(params[:id])
+    if !current_cart.products.include?(@product)
+    current_cart.add_product_to_cart(@product)
+    flash[:notice] = "你已成功将 #{@product.title} 加入购物车"
+  else
+    flash[:warning] = "你的购物车内已有此物品"
+  end
+    redirect_to :back
+  end
+
+
   def wine
     @products = Product.where(:category => "wine").paginate(:page => params[:page], :per_page => 5)
   end
@@ -37,16 +49,5 @@ class ProductsController < ApplicationController
 
   def search_criteria(query_string)
     { :title_cont => query_string }
-  end
-
-  def add_to_cart
-    @product = Product.find(params[:id])
-    if !current_cart.products.include?(@product)
-    current_cart.add_product_to_cart(@product)
-    flash[:notice] = "你已成功将 #{@product.title} 加入购物车"
-  else
-    flash[:warning] = "你的购物车内已有此物品"
-  end
-    redirect_to :back
   end
 end
