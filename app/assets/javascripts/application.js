@@ -17,6 +17,82 @@
 //= require bootstrap-sprockets
 //= require_tree .
 
+/*------------------------------- 轮播功能区 ------------------------------*/
+$(function() {
+    var colors = ['#050215', '#000000', '#43a3f9', '#0b0b0b'];
+    $('#slider ul li').each(function(index, el) {
+        $(el).css('background-color', colors[index]);
+    });
+
+
+    var index = 0;
+    var timer;
+    var $slider_ul_li = $('#slider ul li');
+    var $slider_ul = $('#slider ul');
+    var $slider_span = $('#slider span');
+
+
+    // 向后按钮
+    $('#slider .right-btn').click(function(event) {
+        index++;
+        if (index >= $slider_ul_li.length) {
+            index = 0;
+        }
+
+        $slider_ul.stop().animate({
+            left: '-' + index + '00%'
+        }, 1000);
+    });
+
+    // 向前按钮
+    $('#slider .left-btn').click(function(event) {
+        index--;
+        if (index < 0) {
+            index = $slider_ul_li.length - 1;
+        }
+
+        $slider_ul.stop().animate({
+            left: '-' + index + '00%'
+        }, 1000);
+    });
+
+    //相当于触发了mouseleave事件
+    // clearInterval(timer);
+    // timer = setInterval(function(){
+    // 	index++;
+    // 	if(index>=$slider_ul_li.length){
+    // 		index = 0;
+    // 	}
+
+    // 	$slider_ul.stop().animate({left:'-'+index+'00%'}, 1000);
+
+    // }, 3000);
+    $('#slider').mouseleave();
+
+    $('#slider').mouseenter(function(event) {
+        clearInterval(timer);
+
+        //显示向前、向后按钮
+        $slider_span.fadeIn(100);
+    }).mouseleave(function(event) {
+        clearInterval(timer);
+        timer = setInterval(function() {
+            index++;
+            if (index >= $slider_ul_li.length) {
+                index = 0;
+            }
+
+            $slider_ul.stop().animate({
+                left: '-' + index + '00%'
+            }, 1000);
+
+        }, 3000);
+        //显示向前、向后按钮
+        $slider_span.fadeOut(100);
+    });
+});
+/*------------------------------- 轮播功能区 ------------------------------*/
+
 // $(document).ready(function(){
 // // invoke the carousel
 //     $('#myCarousel').carousel({

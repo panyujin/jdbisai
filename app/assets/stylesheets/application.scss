@@ -19,13 +19,72 @@
  @import "font-awesome";
 
 /*------------------------------- 轮播功能区 ------------------------------*/
+ html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img {
+ 	margin:0;
+ 	padding:0
+ }
+ img {
+ 	display:block;
+ }
+ ul {
+ 	list-style-type:none;
+ }
+ #slider {
+ 	width:100%;
+ 	height:540px;
+  margin: -20px auto;
+ 	overflow:hidden;
+ 	position:relative;
+ }
+ #slider ul {
+ 	width:1000%;
+ 	height:540px;
+ 	position:absolute;
+ 	left:0px;
+ 	top:0;
+ }
+ #slider li {
+ 	width:10%;
+ 	height:540px;
+ 	float:left;
+ 	position:relative;
+ 	overflow:hidden;
+ }
+ #slider li img {
+ 	position:absolute;
+ 	top:0;
+ }
+ #slider span {
+ 	width:100px;
+ 	height:100px;
+ 	line-height:100px;
+ 	text-align:center;
+ 	color:white;
+ 	font-size:100px;
+ 	font-weight:bold;
+ 	position:absolute;
+ 	left:50%;
+ 	top:50%;
+ 	margin-top:-50px;
+ 	cursor:pointer;
+ 	display:none;
+ }
+ #slider .left-btn {
+ 	margin-left:-550px;
+ }
+ #slider .right-btn {
+ 	margin-left:450px;
+ }
+/*------------------------------- 轮播功能区 ------------------------------*/
+
+/*------------------------------- 轮播功能区 ------------------------------*/
  // html, body{
  //   width:100%;
  //   height:100%;
  //   background-color:#fff;
  // font-family: 'Sansita', sans-serif;
  //   }
- // .carousel-inner,.carousel,.item,.container,.fill {
+ // .carousel-inner,.carousel,.item,.cul {
  // height:100%;
  // width:100%;
  // background-position:center center;
@@ -120,6 +179,7 @@
 html { height: 100%;}
   body { min-height: 100%; display: flex; flex-direction: column;}
   .content { flex: 1;}
+
 
   /*--- Partner 小轮播 ---*/
   .partner{
@@ -366,63 +426,3 @@ html { height: 100%;}
   left: 13px;//搜索栏距离左边距离
 }
 /*--//search--*/
-/*-- banner-bottom1 --*/
-.banner-bot-grd{
-	margin-bottom:2em;
-}
-.banner-bot-grid1{
-	position:relative;
-	box-shadow: 2px 2px 25px #CCCBCB;
-}
-.pos-absolt{
-	position:absolute;
-	top: 24%;
-	left: 10%;
-}
-.pos-absolt h3{
-	color: #FAFAFA;
-	font-size: 2em;
-	margin: 0 0 .5em;
-	text-transform: capitalize;
-	font-weight: 700;
-}
-.pos-absolt p{
-	color: #F6F6F6;
-	font-size: 14px;
-	line-height: 1.8em;
-	margin: 0;
-}
-.banner-bot-grid1 img {
-  width: 100%;
-}
-.banner-bottom1{
-	padding:4em 0;
-}
-.head-para{
-	position: absolute;
-	top:29%;
-	left: 11%;
-}
-.banner-bottom1-grid1{
-	box-shadow: 2px 2px 25px #CCCBCB;
-	position: relative;
-}
-.banner-bottom1-grid1 h3{
-	color: #fff;
-	font-weight: 600;
-	font-size: 1.3em;
-	margin: 0;
-	text-transform: capitalize;
-}
-.banner-bottom1-grid1 p{
-	color:#F6F6F6;
-	font-size:14px;
-	line-height:1.8em;
-	margin: 1em 0 0em;
-	width: 85%;
-}
-.jel-video iframe{
-	width:100%;
-	min-height:295px;
-}
-/*-- //banner-bottom1 --*/
