@@ -22,21 +22,21 @@ class ProductsController < ApplicationController
 
 
   def wine
-    @products = Product.where(:category => "wine").paginate(:page => params[:page], :per_page => 5)
+    @products = Product.where(:category => "wine").paginate(:page => params[:page], :per_page => 100)
   end
 
   def spirit
-    @products = Product.where(:category => "spirit").paginate(:page => params[:page], :per_page => 5)
+    @products = Product.where(:category => "spirit").paginate(:page => params[:page], :per_page => 100)
   end
 
   def brandy
-    @products = Product.where(:category => "brandy").paginate(:page => params[:page], :per_page => 5)
+    @products = Product.where(:category => "brandy").paginate(:page => params[:page], :per_page => 100)
   end
 
   def search
     if @query_string.present?
       search_result = Product.ransack(@search_criteria).result(:distinct => true)
-      @products = search_result.paginate(:page => params[:page], :per_page => 5 )
+      @products = search_result.paginate(:page => params[:page], :per_page => 10 )
     end
   end
 
