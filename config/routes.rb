@@ -20,6 +20,8 @@ Rails.application.routes.draw do
   resources :products do
     member do
       post :add_to_cart
+      post :like
+      post :unlike
     end
     collection do
       get :search
@@ -48,6 +50,7 @@ Rails.application.routes.draw do
 
   namespace :account do
     resources :orders
+    resources :favorites
   end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
