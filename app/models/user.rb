@@ -11,7 +11,7 @@ class User < ApplicationRecord
   end
 
   def is_like?(product)
-    favorited_products.include?(@product)
+    favorited_products.include?(product)
   end
 
   def like!(product)
